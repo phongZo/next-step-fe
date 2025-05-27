@@ -1,0 +1,637 @@
+// @import '@assets/scss/global';
+.loginPage {
+    height: 100svh;
+    display: flex;
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    // background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.05)), url('../../assets/images/bgLogin.svg') ;
+    // background-image: url('../../../../assets/images/backgroundLoginMobile.svg');
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--white);
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        height: 50px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        .createAccount {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 32px;
+            text-align: center;
+            margin-right: 30px;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: var(--text-black);
+        }
+        .iconBack {
+            margin-left: 8px;
+            width: 13px;
+            height: 25px;
+        }
+    }
+    .footerCopyRight {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: var(--text-color);
+    }
+    .loginForm {
+        width: 100%;
+        max-width: 45rem;
+        //height: 565px;
+        //padding: 24px;
+        background-color: var(--white);
+        border: 1px solid var(--white);
+        box-shadow: 0px 8px 15px 5px var(--black);
+
+        .input {
+            display: flex;
+            flex-direction: column;
+            margin: 8px 0px;
+        }
+        .customInput {
+            width: 100%;
+        }
+
+        button {
+            width: 100%;
+        }
+
+        h2 {
+            margin-bottom: 1.8rem;
+        }
+        h3 {
+            margin-block-start: 0px;
+        }
+
+        h3,
+        button {
+            text-align: center;
+        }
+
+        center {
+            margin: 1rem 0 0.5rem;
+        }
+
+        .inputContainer {
+            position: relative;
+        }
+
+        .customTitle {
+            color: #0c1421;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 35px;
+            text-align: center;
+            // padding: 0 40px;
+            margin: 18px 0px;
+        }
+
+        .headerForm {
+            // gap: 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 6px;
+            width: 100%;
+
+            .customTitle {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+
+            .description {
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 25.6px;
+                letter-spacing: 0.01em;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: var(--text-color);
+                .shortDescription {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .customTitle {
+        color: var(--text-blue);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .titleOTP {
+        color: var(--text-blue);
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: start;
+        margin: 15px 0px;
+        //padding: 0 40px;
+    }
+
+    .btn {
+        cursor: pointer;
+        margin: -1px 0px;
+        font-size: 16px;
+        line-height: 16px;
+        border-radius: 12px;
+        font-weight: 300;
+        background-color: #168E85;
+        &:hover {
+            background: #168E85;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.6rem;
+        .question {
+            font-size: 16px;
+            font-weight: 300;
+            margin-right: 5px;
+        }
+        .register {
+            font-size: 16px;
+            font-weight: 400;
+            color: #168E85;
+        }
+    }
+
+    .forgotPassword {
+        letter-spacing: 0.01em;
+        padding: 6px 0px 16px 0px;
+        color: #1E4AE9;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        text-align: right;
+        margin-right: 0px;
+        margin-top: 10px;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .qrUrl {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        span {
+            max-width: 100%;
+        }
+    }
+
+    img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titleLogin {
+        font-size: 2rem;
+        text-align: center;
+        display: inline-block;
+        color: var(--white);
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .noAccount {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 18.75px;
+            text-align: left;
+        }
+
+        .request {
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 18.75px;
+            text-align: left;
+            color: var(--text-blue);
+            margin-left: 12px;
+        }
+    }
+
+    .customInput {
+        height: 48px;
+        border-radius: 12px;
+        background-color: #f7fbff;
+        font-size: 16px;
+        padding-left: 10px;
+        margin-top: -7px;
+        margin-left: -2px;
+        border: 1px solid #d4d7e3;
+    }
+
+    .iconTogglePassword {
+        padding-bottom: 4px;
+    }
+
+    .required {
+        color: var(--text-blue);
+    }
+
+    .confirmOTP {
+        max-width: 100%;
+        padding: 20px;
+        background-color: var(--white);
+        border: 1px solid var(--white);
+        box-shadow: 0px 8px 15px 5px var(--black);
+        margin: 40px 0px;
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 30px;
+            text-align: center;
+            color: var(--text-blue);
+        }
+        .note {
+            //padding: 0 40px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21.94px;
+            margin: 10px 0px;
+            text-align: center;
+            color: #000000;
+            width: 460px;
+        }
+        .otpInput {
+            width: 50px !important;
+            height: 50px;
+            border: 2px solid var(--white);
+            border-radius: 12px;
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 20px 2px;
+            &:focus {
+                outline: none;
+                border-color: var(--blue-100);
+                transition: border-color 0.3s;
+            }
+        }
+
+        .otpContainer {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        .btn {
+            width: 100%;
+            margin-top: 20px;
+            height: 40px;
+            font-size: 16px;
+            cursor: pointer;
+            &:hover {
+                background: #1e80e6;
+            }
+        }
+        .sendOTP {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 32px;
+            span {
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .sendAgain {
+                letter-spacing: 0.01em;
+                color: var(--text-blue);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0.01em;
+                text-align: right;
+                margin-right: 0px;
+                margin-left: 10px;
+            }
+        }
+        .confirmButton {
+            background: var(--text-blue);
+            // padding: 10px !important;
+            cursor: pointer;
+            &:hover {
+                background: #1e80e6;
+            }
+            .titleContinue {
+                font-size: 2rem;
+                text-align: center;
+                display: inline-block;
+                color: var(--white);
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+        //margin: 0 1.5rem;
+
+        .loginForm {
+            padding: 0px 12px 16px;
+            box-shadow: none;
+            margin-bottom: 12px;
+            margin-top: 45px;
+            //border-radius: 15px;
+            .headerForm {
+                .customTitle {
+                    // display: flex;
+                }
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            .customInput {
+                height: 55px;
+                font-size: 14px;
+            }
+
+            button {
+                height: 50px;
+                font-size: 20px;
+            }
+            .errorText {
+                color: red;
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 2px;
+            }
+        }
+
+        .customTitle {
+            font-size: 2rem;
+        }
+
+        .confirmOTP {
+            max-width: 100%;
+            padding: 20px;
+            background-color: var(--white);
+            border: 1px solid var(--white);
+            box-shadow: none;
+            .titleOTP {
+                font-size: 28px;
+                text-align: start;
+                font-weight: 700;
+            }
+            .title {
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 30px;
+                text-align: center;
+                color: var(--text-blue);
+            }
+            .note {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 25px;
+                //margin: 10px 40px;
+                text-align: center;
+                color: #000000;
+                max-width: 100%;
+            }
+            .otpInput {
+                width: 50px !important;
+                height: 50px;
+                border: 1px solid var(--text-gray);
+                border-radius: 12px;
+                text-align: center;
+                font-size: 1.5rem;
+                margin: 20px 2px;
+                &:focus {
+                    outline: none;
+                    border-color: var(--blue-100);
+                    transition: border-color 0.3s;
+                }
+            }
+
+            .otpContainer {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+            .sendOTP {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-bottom: 32px;
+                span {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                .sendAgain {
+                    letter-spacing: 0.01em;
+                    color: var(--text-blue);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    letter-spacing: 0.01em;
+                    text-align: right;
+                    margin-right: 0px;
+                    margin-left: 10px;
+                }
+            }
+            .confirmButton {
+                background: var(--text-blue);
+                // padding: 10px !important;
+                .titleContinue {
+                    font-size: 2rem;
+                    text-align: center;
+                    display: inline-block;
+                    color: var(--white);
+                }
+            }
+        }
+
+        .forgotPassword {
+            font-size: 14px;
+        }
+        .qrUrl img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .otpContainer {
+            gap: 4px;
+            width: 100%;
+        }
+        .sendOTP {
+            span {
+                font-size: 24px;
+            }
+            .sendAgain {
+                letter-spacing: 0.01em;
+                color: var(--text-blue);
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0.01em;
+                text-align: right;
+                margin-right: 0px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    @media (min-width: 450px) and (max-width: 768px) {
+        //margin: 0 2rem;
+
+        .loginForm {
+            padding: 30px;
+            border-radius: 20px;
+            h2 {
+                font-size: 1.6rem;
+            }
+            .btn {
+                font-size: 16px;
+            }
+        }
+
+        .confirmOTP {
+            border-radius: 20px;
+            .btn {
+                font-size: 16px;
+            }
+        }
+
+        button {
+            width: 100%;
+            height: 44px;
+            margin-bottom: 40px;
+        }
+
+        .customTitle {
+            font-size: 2.5rem;
+        }
+
+        .titleOTP {
+            font-size: 30px;
+            text-align: start;
+            font-weight: 700;
+        }
+
+        .otpInput {
+            width: 40px !important;
+            height: 40px;
+            font-size: 16px;
+        }
+
+        .confirmButton {
+            font-size: 16px;
+            padding: 12px 0;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) and (orientation: landscape) {
+        .loginPage {
+            display: flex;
+            // flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-position: initial;
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 100%;
+            background-color: var(--white) !important;
+        }
+
+        .header {
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .loginForm {
+            background-color: var(--white) !important;
+            // width: 100%;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0px 88px;
+            margin-top: 7.5rem;
+
+            box-shadow: none;
+            .form {
+                max-width: 100%;
+                background-color: var(--white) !important;
+                .customTitle {
+                    color: var(--text-color);
+                    font-weight: 400;
+                    font-size: 12px;
+                    // display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .input {
+                    label {
+                        font-size: 10px;
+                    }
+                }
+            }
+            .headerForm {
+                display: flex;
+                // flex-direction: column;
+                justify-content: center;
+                margin-right: 6px;
+                width: 100%;
+                .customTitle {
+                    font-size: 19px;
+                }
+                .description {
+                    .shortDescription {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .btn {
+            // margin-top: 20px;
+            height: 40px;
+        }
+    }
+}
+
+.otpInput::-webkit-inner-spin-button,
+.otpInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.otpInput[type='number'] {
+    -moz-appearance: textfield;
+}

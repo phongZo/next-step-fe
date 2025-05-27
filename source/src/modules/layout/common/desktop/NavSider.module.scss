@@ -1,0 +1,137 @@
+/* Container styles */
+.nav-sider {
+    width: 200px;
+    height: 100%;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+.nav-sider.collapsed {
+    width: 60px;
+}
+.sider-header {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #34495e;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+}
+.sider-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    padding: 15px 11px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+    font-size: large;
+}
+
+// .menu-item:hover {
+//     background-color: #38abf1;
+//     color: white;
+//     stroke: 'white';
+// }
+
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    background: #001529;
+    padding: 0px 10px;
+    border-radius: 20px;
+    // padding-left: 24px;
+    font-weight: 400;
+
+    position: relative;
+    .left {
+        position: absolute;
+        border-left: 6px solid;
+        position: absolute;
+        height: 80%;
+        left: 0;
+        top: 10%;
+        border-radius: 0 20px 20px 0;
+        display: none;
+        // &[data-active] {
+        //     display: inline;
+        //     color: #38abf1;
+        // }
+    }
+
+    .item {
+        padding: 24px 24px;
+        width: 100%;
+        border-radius: 6px;
+        color: #000c17;
+
+        &:hover {
+            background: #9fdaff;
+            color: white;
+
+            .linkIcon {
+                color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+            }
+
+            svg {
+                stroke: white;
+            }
+        }
+
+        &[data-active] {
+            background: #38abf1;
+            color: white;
+
+            .linkIcon {
+                color: var(--mantine-color-blue-light-color);
+            }
+
+            svg {
+                stroke: white;
+            }
+
+            &:hover {
+                background: #38abf1;
+                color: white;
+
+                .linkIcon {
+                    color: var(--mantine-color-blue-light-color);
+                }
+            }
+        }
+
+        .iconClassName {
+            svg {
+                height: 20px;
+            }
+        }
+    }
+}
+
+.linkIcon {
+    color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-2));
+    margin-right: var(--mantine-spacing-sm);
+    width: 25px;
+    height: 25px;
+}
+
+.imgLogo {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
