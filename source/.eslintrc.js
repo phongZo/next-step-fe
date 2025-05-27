@@ -5,7 +5,7 @@ module.exports = {
             version: 'detect',
         },
     },
-    extends: [ 'eslint:recommended', 'plugin:react/recommended' ],
+    extends: ['eslint:recommended', 'plugin:react/recommended'],
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
@@ -13,7 +13,7 @@ module.exports = {
             jsx: true,
         },
     },
-    plugins: [ 'react', 'prettier', 'react-hooks', 'simple-import-sort' ],
+    plugins: ['react', 'prettier', 'react-hooks', 'simple-import-sort'],
     rules: {
         indent: [
             'error',
@@ -31,23 +31,22 @@ module.exports = {
                 after: true,
             },
         ],
-        'array-bracket-spacing': [ 'error', 'always' ],
-        'object-curly-spacing': [ 'error', 'always' ],
+        'object-curly-spacing': ['error', 'always'],
         'react-hooks/exhaustive-deps': 'off',
-        'comma-dangle': [ 'error', 'always-multiline' ],
-        semi: [ 'error', 'always' ],
+        'comma-dangle': ['error', 'always-multiline'],
+        semi: ['error', 'always'],
         'no-unused-vars': 'warn',
         'no-console': process.env.ESLINT_ENV === 'commit' ? 'error' : 'warn',
         'simple-import-sort/imports': [
             'warn',
             {
                 groups: [
-                    [ '^react', '^next', '^@?\\w' ],
-                    [ '^(@|components)(/.*|$)' ],
-                    [ '^\\u0000' ],
-                    [ '^\\.\\.(?!/?$)', '^\\.\\./?$' ],
-                    [ '^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$' ],
-                    [ '^.+\\.?(scss|css)$' ],
+                    ['^react', '^next', '^@?\\w'],
+                    ['^(@|components)(/.*|$)'],
+                    ['^\\u0000'],
+                    ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
+                    ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+                    ['^.+\\.?(scss|css)$'],
                 ],
             },
         ],
@@ -59,5 +58,5 @@ module.exports = {
         es6: true,
         jest: true,
     },
-    ignorePatterns: [ 'appServer.js' ],
+    ignorePatterns: ['appServer.js'],
 };

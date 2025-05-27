@@ -47,7 +47,7 @@ function LoginPageDesktop({
     restaurantData,
     loginSlidesShow,
 }) {
-    const [ otp, setOtpLocal ] = useState('');
+    const [otp, setOtpLocal] = useState('');
     const translate = useTranslate();
 
     const handleSubmit = () => {
@@ -119,7 +119,7 @@ function LoginPageDesktop({
                         <div className={styles.footerCopyRight}>© 2025 HQTech</div>
                     </div>
                     <div className={`${styles.contentRight} wrapper-login`}>
-                        <Swiper spaceBetween={30} pagination={{ clickable: true }} modules={[ Pagination ]}>
+                        <Swiper spaceBetween={30} pagination={{ clickable: true }} modules={[Pagination]}>
                             {loginSlidesShow?.length > 0 ? (
                                 loginSlidesShow?.map((slide, index) => (
                                     <SwiperSlide key={index}>
@@ -137,11 +137,7 @@ function LoginPageDesktop({
                             ) : (
                                 <SwiperSlide>
                                     <div style={{ position: 'relative' }}>
-                                        <img
-                                            src={imageLogin}
-                                            alt="Default Login Image"
-                                            className={styles.imageLogin}
-                                        />
+                                        <img src={imageLogin} alt="Default Login Image" className={styles.imageLogin} />
                                     </div>
                                 </SwiperSlide>
                             )}

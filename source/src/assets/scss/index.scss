@@ -1,4 +1,7 @@
-@use "./base";
-@use "./theme";
-@use "./vendors";
-@use "./quill";
+@use './base';
+@use './theme';
+@use './vendors';
+@use './quill';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

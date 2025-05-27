@@ -1,3 +1,5 @@
+import React from 'react';
+import { defineMessages } from 'react-intl';
 import Button from '@components/common/elements/Button';
 import Flex from '@components/common/elements/Flex';
 import { Form } from '@components/common/elements/Form';
@@ -5,8 +7,6 @@ import { InputField } from '@components/common/elements/Input';
 import { commonMessage } from '@constants/intl';
 import useTranslate from '@hooks/useTranslate';
 import { Buffer } from 'buffer';
-import React from 'react';
-import { defineMessages } from 'react-intl';
 
 import styles from './register.module.scss';
 
