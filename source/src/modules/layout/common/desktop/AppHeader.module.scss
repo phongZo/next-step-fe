@@ -1,0 +1,37 @@
+.navbar {
+    background: #fff;
+    border: none !important;
+    border-bottom: 1px solid #e9eaec !important;
+    border-radius: inherit !important;
+    margin-bottom: 0 !important;
+    position: sticky !important;
+    top: 0;
+    z-index: 11;
+}
+
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.px-30 {
+    padding: 0 24px !important;
+}
+
+.navbar-header {
+}
+
+.navbar-brand {
+    display: block;
+    height: auto !important;
+    padding: 0 20px 0 0 !important;
+}
+
+.navbar-brand img {
+    height: 72px !important;
+    margin-top: 0;
+    display: block;
+}

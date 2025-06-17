@@ -1,0 +1,101 @@
+.app-footer {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    padding: 40px 0px 20px 0px;
+
+    z-index: 1;
+    bottom: 0;
+    background-color: var(--footer-color);
+    color: white;
+    font-size: 1.6rem;
+    .content {
+        width: 100%;
+        display: flex;
+        gap: 5%;
+        .footer-item {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .logo {
+                background-color: #fff;
+                border-radius: 4px;
+                width: 80px;
+                height: 50px;
+                cursor: pointer;
+                object-fit: contain;
+            }
+            .title {
+                font-weight: 600;
+                font-size: 16px;
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-size: 16px;
+                font-weight: 400;
+                .install-Item {
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    background: white;
+                    padding: 10px 24px;
+                    border-radius: 8px;
+                    color: var(--primary-color);
+                    .installItemContent {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    .icon {
+        display: flex;
+        gap: 10px;
+
+        .iconItem {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+    }
+    .text {
+        display: flex;
+        align-items: center;
+        svg {
+            width: 16px;
+        }
+    }
+}
+.install {
+    display: flex;
+    flex-direction: column;
+    .title {
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .content {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .install-item {
+    }
+}
+.divider {
+    margin-top: 10px;
+}

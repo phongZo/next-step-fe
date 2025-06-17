@@ -1,0 +1,161 @@
+{
+  "get-slot": {
+        "bookings" : [ {
+            "id" : 8222529191378944,
+            "employee" : {
+              "id" : 8168114821136384,
+              "fullName" : "Ngọc"
+            },
+            "sku" : {
+              "id" : 8188551043776512,
+              "name" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+              "schedule" : "{\"duration\":45}",
+              "service" : {
+                "id" : 8188551042990080,
+                "name" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+                "kind" : 1,
+                "isContainedInPackage" : false,
+                "isBooked" : false
+              }
+            },
+            "appointmentTime" : "20/09/2003 00:00:00",
+            "duration" : 45
+          }, {
+            "id" : 8222538584489984,
+            "employee" : {
+              "id" : 8168114821136384,
+              "fullName" : "Ngọc"
+            },
+            "sku" : {
+              "id" : 8188551043776512,
+              "name" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+              "schedule" : "{\"duration\":45}",
+              "service" : {
+                "id" : 8188551042990080,
+                "name" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+                "kind" : 1,
+                "isContainedInPackage" : false,
+                "isBooked" : false
+              }
+            },
+            "appointmentTime" : "20/09/2003 00:00:00",
+            "duration" : 45
+          }, {
+            "id" : 8222640951427072,
+            "employee" : {
+              "id" : 8168114821136384,
+              "fullName" : "Ngọc"
+            },
+            "sku" : {
+              "id" : 8188551043776512,
+              "name" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+              "schedule" : "{\"duration\":45}",
+              "service" : {
+                "id" : 8188551042990080,
+                "name" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+                "kind" : 1,
+                "isContainedInPackage" : false,
+                "isBooked" : false
+              }
+            },
+            "appointmentTime" : "20/09/2003 00:00:00",
+            "duration" : 45
+          }, {
+            "id" : 8222641088626688,
+            "employee" : {
+              "id" : 8168114821136384,
+              "fullName" : "Ngọc"
+            },
+            "sku" : {
+              "id" : 8188551043776512,
+              "name" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+              "schedule" : "{\"duration\":45}",
+              "service" : {
+                "id" : 8188551042990080,
+                "name" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+                "kind" : 1,
+                "isContainedInPackage" : false,
+                "isBooked" : false
+              }
+            },
+            "appointmentTime" : "20/09/2003 00:00:00",
+            "duration" : 45
+          }, {
+            "id" : 8222641901273088,
+            "employee" : {
+              "id" : 8168114821136384,
+              "fullName" : "Ngọc"
+            },
+            "sku" : {
+              "id" : 8188551043776512,
+              "name" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+              "schedule" : "{\"duration\":45}",
+              "service" : {
+                "id" : 8188551042990080,
+                "name" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+                "kind" : 1,
+                "isContainedInPackage" : false,
+                "isBooked" : false
+              }
+            },
+            "appointmentTime" : "20/09/2003 00:00:00",
+            "duration" : 45
+          }, {
+            "id" : 8222641951539200,
+            "employee" : {
+              "id" : 8168114821136384,
+              "fullName" : "Ngọc"
+            },
+            "sku" : {
+              "id" : 8188551043776512,
+              "name" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+              "schedule" : "{\"duration\":45}",
+              "service" : {
+                "id" : 8188551042990080,
+                "name" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+                "kind" : 1,
+                "isContainedInPackage" : false,
+                "isBooked" : false
+              }
+            },
+            "appointmentTime" : "20/09/2003 00:00:00",
+            "duration" : 45
+          }, {
+            "id" : 8222651623342080,
+            "employee" : {
+              "id" : 8168114821136384,
+              "fullName" : "Ngọc"
+            },
+            "sku" : {
+              "id" : 8188551043776512,
+              "name" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+              "schedule" : "{\"duration\":45}",
+              "service" : {
+                "id" : 8188551042990080,
+                "name" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+                "kind" : 1,
+                "isContainedInPackage" : false,
+                "isBooked" : false
+              }
+            },
+            "appointmentTime" : "20/09/2003 00:00:00",
+            "duration" : 45
+          } ],
+          "availableServices" : [ {
+            "date" : "20/09/2003",
+            "skuId" : 8188551043776512,
+            "skuName" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+            "duration" : 45
+          },
+          {
+            "date" : "20/09/2003",
+            "skuId" : 8188551043776512,
+            "skuName" : "{\"default\":\"Hair cutting - Cắt tóc nữ kiểu truyền thống - Tóc bob ngắn cổ điển\"}",
+            "duration" : 45
+          }
+        
+        
+        ]
+      
+  }
+}

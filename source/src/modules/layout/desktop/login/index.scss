@@ -1,0 +1,289 @@
+/* .wrapper-login {
+    .swiper {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        display: block;
+        border-radius: 14px;
+    }
+
+    .swiper-slide {
+        border-radius: 8px;
+        width: 100% !important;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-wrapper {
+        z-index: 0;
+    }
+
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 20px;
+        padding: 0 8px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 80px;
+        height: 4px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        opacity: 0.5;
+        transition:
+            background-color 0.3s,
+            transform 0.3s;
+        cursor: pointer;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--primary-color);
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+} */
+
+.auth {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 60px 16px 20px;
+    position: relative;
+    scrollbar-width: none;
+    &-inner {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: center;
+    }
+    &-form {
+        background: #fff;
+        width: 600px;
+
+        & .login {
+            color: #4d5965;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            margin-top: 0;
+
+            & .forgot-password {
+                text-align: right;
+                & a {
+                    color: #00b14f;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+            }
+
+            .btn-login {
+                height: 40px;
+                background: #00b14f;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                transition: opacity 0.3s ease;
+
+                &:hover {
+                    background-color: #3ba769;
+                }
+            }
+
+            & .or-login {
+                color: #6f7882;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                margin-bottom: 16px;
+                margin-top: 16px;
+                text-align: center;
+            }
+        }
+    }
+
+    & .header {
+        padding-bottom: 24px;
+        width: 100%;
+
+        & .title {
+            color: #00b14f;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+            text-align: left;
+        }
+
+        & .caption {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: 20px;
+            margin-bottom: 0;
+            text-align: left;
+            color: #6c757d;
+        }
+    }
+
+    & .option-auth {
+        font-size: 14px;
+        margin-top: 16px;
+        justify-content: space-around;
+        display: flex;
+
+        a {
+            color: #00b14f !important;
+            font-size: 14px;
+            letter-spacing: 0;
+            text-decoration: none;
+        }
+    }
+
+    & .support {
+        text-align: center;
+        margin-top: 16px;
+        position: relative;
+        &-text {
+            font-weight: bold;
+        }
+
+        & .hotline {
+            color: #00b14f;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            text-align: center;
+        }
+        &::before {
+            border-top: 1px solid #eee;
+            content: '';
+            display: block;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 16px;
+            width: 100%;
+        }
+    }
+
+    &-copy-right {
+        color: #00b14f;
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 145%;
+        margin-top: 60px;
+        text-align: center;
+    }
+}
+
+.login-width {
+    &-google,
+    &-facebook,
+    &-linkedin {
+        border-radius: 3px;
+        color: #fff;
+        display: flex;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        gap: 4px;
+        height: 40px;
+        justify-content: center;
+        line-height: 20px;
+        margin: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    &-google {
+        background: #e73b2f;
+        border-color: #e73b2f;
+    }
+
+    &-facebook {
+        background: #3b5998;
+        border-color: #3b5998;
+    }
+
+    &-linkedin {
+        background: #0077b5;
+        border-color: #0077b5;
+    }
+}
+
+.bg {
+    &-right {
+        background-image: url(https://static.topcv.vn/v4/image/auth/auth_bg_desktop.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        width: 500px;
+        &-abs {
+            left: 35px;
+            margin-top: -32px;
+            max-width: 300px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            & h1 {
+                color: #fff;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 60px;
+                margin: 0;
+                margin-top: 24px;
+            }
+            & p {
+                color: #fff;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                margin-bottom: 16px;
+                margin-top: 0;
+            }
+        }
+        &-arrow {
+            background-image: url(https://static.topcv.vn/v4/image/auth/auth_arrow.png);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 608px;
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 211.08px;
+        }
+        &-link {
+            display: none;
+            inset: 0;
+            position: absolute;
+        }
+    }
+}

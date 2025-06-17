@@ -1,0 +1,62 @@
+module.exports = {
+    root: true,
+    settings: {
+        react: {
+            version: 'detect',
+        },
+    },
+    extends: ['eslint:recommended', 'plugin:react/recommended'],
+    parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        ecmaFeatures: {
+            jsx: true,
+        },
+    },
+    plugins: ['react', 'prettier', 'react-hooks'],
+    rules: {
+        indent: [
+            'error',
+            4,
+            {
+                SwitchCase: 4,
+            },
+        ],
+        'react-hooks/rules-of-hooks': 'error',
+        'react/prop-types': 0,
+        'arrow-spacing': [
+            'error',
+            {
+                before: true,
+                after: true,
+            },
+        ],
+        'object-curly-spacing': ['error', 'always'],
+        'react-hooks/exhaustive-deps': 'off',
+        'comma-dangle': ['error', 'always-multiline'],
+        semi: ['error', 'always'],
+        'no-unused-vars': 'warn',
+        'no-console': process.env.ESLINT_ENV === 'commit' ? 'error' : 'warn',
+        // 'simple-import-sort/imports': [
+        //     'warn',
+        //     {
+        //         groups: [
+        //             ['^react', '^next', '^@?\\w'],
+        //             ['^(@|components)(/.*|$)'],
+        //             ['^\\u0000'],
+        //             ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
+        //             ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+        //             ['^.+\\.?(scss|css)$'],
+        //         ],
+        //     },
+        // ],
+        // 'simple-import-sort/exports': 'warn',
+    },
+    env: {
+        browser: true,
+        node: true,
+        es6: true,
+        jest: true,
+    },
+    ignorePatterns: ['appServer.js'],
+};
